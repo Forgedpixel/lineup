@@ -1,0 +1,96 @@
+.controlpanel .column{
+    width: 50%;
+    float: left;
+    height: 600px;
+}
+.controlpanel ul{
+    margin: 0;
+    padding: 0;
+}
+.controlpanel li{
+    list-style: none;
+}
+.controlpanel .column.list{
+    overflow-y: scroll;
+}
+
+.controlpanel .playlistTitle{
+    text-align: left;
+}
+::-webkit-scrollbar
+{
+    width: 12px;  /* for vertical scrollbars */
+    height: 12px; /* for horizontal scrollbars */
+}
+
+::-webkit-scrollbar-track
+{
+    background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb
+{
+    background: rgba(0, 0, 0, 0.5);
+}
+.thumbnail{
+    background: url('http://img.youtube.com/vi/0mLOu5RiRjs/maxresdefault.jpg') no-repeat center center;
+    background-size: 100%;
+    width: 100%;
+    height: 150px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    overflow: hidden;
+    cursor:pointer;
+}
+
+.thumbnail .information p{
+    font-size: 13px;
+    position: absolute;
+    top: 63%;
+    text-align: center;
+    width: 100%;
+}
+.controlpanel ul li:first-child .thumbnail{
+    background: url('http://img.youtube.com/vi/AfCl0BhPHvA/maxresdefault.jpg') no-repeat center center;
+    background-size: 100%;
+}
+.thumbnail .information{
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+    height: 150px;
+}
+.information h2{
+    margin: 0;
+    line-height: 150px;
+}
+
+.controlpanel .video .player-wrapper{
+    height: 75%;
+}
+
+.controlpanel .video .information{
+    height: 25%;
+    background: url('../img/bg-info.jpg') no-repeat center center;
+    overflow: hidden;
+    position: relative;
+}
+
+.controlpanel .video .information p{
+    font-size: 13px;
+    position: absolute;
+    top: 63%;
+    text-align: center;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .controlpanel .column{
+        width: 100%;
+    }
+    .controlpanel .video .information{
+        background-size: 100%;
+    }
+}
